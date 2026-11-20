@@ -1,0 +1,136 @@
+// Medidas DAX del Proyecto 3
+// Modelo:
+//   fact_diario[fecha, state, accidentes, suma_severidad, suma_duracion_min, n_con_duracion]
+//   dim_fecha[fecha, anio, mes, mes_nombre, trimestre, dia_semana, dia_nombre]
+//   dim_estado[state, estado, region, poblacion_2023]
+// Relaciones:
+//   fact_diario[fecha]  -> dim_fecha[fecha]   (varios a 1)
+//   fact_diario[state]  -> dim_estado[state]  (varios a 1)
+// Marcar dim_fecha como tabla de fechas, columna fecha.
+
+// ---------------------------------------------------------------------------
+// 1. Agregaciones: SUM, AVERAGE y COUNT
+// ---------------------------------------------------------------------------
+
+Total de accidentes =
+SUM ( fact_diario[accidentes] )
+
+Severidad promedio =
+DIVIDE (
+    SUM ( fact_diario[suma_severidad] ),
+    [Total de accidentes]
+)
+
+Duracion promedio min =
+DIVIDE (
+    SUM ( fact_diario[suma_duracion_min] ),
+    SUM ( fact_diario[n_con_duracion] )
+)
+
+// ---------------------------------------------------------------------------
+// 2. CALCULATE con filtro de contexto
+// Accidentes ocurridos sabado o domingo.
+// ---------------------------------------------------------------------------
+
+Accidentes fin de semana =
+CALCULATE (
+    [Total de accidentes],
+    dim_fecha[dia_nombre] IN { "Sabado", "Domingo" }
+)
+
+// ---------------------------------------------------------------------------
+// 3. Segmentacion temporal
+// La jerarquia anio / trimestre / mes / dia vive en dim_fecha.
+// Esta medida responde al anio que este filtrado en el visual.
+// ---------------------------------------------------------------------------
+
+Accidentes del periodo =
+CALCULATE ( [Total de accidentes], ALLSELECTED ( dim_fecha ) )
+
+// ---------------------------------------------------------------------------
+// 4. Inteligencia de tiempo: YTD, MTD y SAMEPERIODLASTYEAR
+// ---------------------------------------------------------------------------
+
+Accidentes YTD =
+TOTALYTD ( [Total de accidentes], dim_fecha[fecha] )
+
+Accidentes MTD =
+TOTALMTD ( [Total de accidentes], dim_fecha[fecha] )
+
+Accidentes anio anterior =
+CALCULATE (
+    [Total de accidentes],
+    SAMEPERIODLASTYEAR ( dim_fecha[fecha] )
+)
+
+Variacion interanual =
+DIVIDE (
+    [Total de accidentes] - [Accidentes anio anterior],
+    [Accidentes anio anterior]
+)
+
+// ---------------------------------------------------------------------------
+// 5. RANKX
+// ---------------------------------------------------------------------------
+
+Ranking del estado =
+RANKX (
+    ALL ( dim_estado[estado] ),
+    [Total de accidentes],
+    ,
+    DESC,
+    DENSE
+)
+
+// ---------------------------------------------------------------------------
+// 6. Variables DAX (VAR ... RETURN)
+// KPI: accidentes por cada 100.000 habitantes.
+// ---------------------------------------------------------------------------
+
+Tasa por 100 mil =
+VAR AccidentesEstado = [Total de accidentes]
+VAR Poblacion =
+    SUM ( dim_estado[poblacion_2023] )
+RETURN
+    DIVIDE ( AccidentesEstado, Poblacion ) * 100000
+
+// ---------------------------------------------------------------------------
+// 7. Funciones de texto: SEARCH
+// Columna calculada en fact_clima. Busca la raiz "lluv".
+// Si no la encuentra, SEARCH devuelve el valor alternativo 0.
+// ---------------------------------------------------------------------------
+
+Es condicion de lluvia =
+IF (
+    SEARCH ( "lluv", fact_clima[tipo_clima], 1, 0 ) > 0,
+    "Si",
+    "No"
+)
+
+// ---------------------------------------------------------------------------
+// 8. Relacion entre dos variables
+// Se usa en un grafico de dispersion: hora (eje X) contra esta medida (eje Y),
+// con el numero de accidentes en el tamano de la burbuja.
+// La tabla de apoyo es fact_hora[hora, franja, accidentes, severidad_promedio].
+// ---------------------------------------------------------------------------
+
+Severidad de la hora =
+AVERAGE ( fact_hora[severidad_promedio] )
+
+// ---------------------------------------------------------------------------
+// 9. KPI propio: peso del estado dentro del pais
+// ---------------------------------------------------------------------------
+
+Participacion del estado =
+DIVIDE (
+    [Total de accidentes],
+    CALCULATE ( [Total de accidentes], ALL ( dim_estado ) )
+)
+
+// ---------------------------------------------------------------------------
+// 10. Tendencia y desviacion estandar
+// STDEV.P sobre los accidentes diarios del contexto actual.
+// ---------------------------------------------------------------------------
+
+Desviacion accidentes diarios =
+STDEV.P ( fact_diario[accidentes] )

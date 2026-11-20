@@ -1,0 +1,23 @@
+﻿indicador,valor
+total_accidentes,7728394
+desde,2016-01-14 15:18:33
+hasta,2023-03-31 18:30:00
+hora_pico,7
+hora_pico_accidentes,587472
+ciudad_top,"Miami, FL"
+ciudad_top_accidentes,186768
+estado_top,California
+estado_top_accidentes,1741433
+estado_mayor_tasa,South Carolina
+tasa_mayor,7119.25
+clima_mas_frecuente,Despejado
+via_mayor_severidad,Interestatal
+via_mayor_severidad_media,2.382
+dia_pico,Viernes
+duracion_promedio_min,108.03
+duracion_mediana_min,74.75
+vehiculo_especificado_top,Autobus
+punto_critico,"Orlando, FL"
+punto_critico_accidentes,3847
+mes_pico,2022-04
+mes_pico_accidentes,196687

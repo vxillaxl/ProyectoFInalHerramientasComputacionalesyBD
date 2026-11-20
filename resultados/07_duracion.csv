@@ -1,0 +1,6 @@
+﻿grupo,promedio_min,mediana_min,minimo_min,maximo_min,incidentes
+Severidad 1,45.73,44.75,15.0,884.0,67356
+Severidad 2,114.69,77.43,1.92,1440.0,6126329
+Severidad 3,67.78,44.4,1.22,1439.98,1298989
+Severidad 4,185.9,126.97,6.6,1440.0,200739
+Todos,108.03,74.75,1.22,1440.0,7693413

@@ -1,0 +1,246 @@
+﻿state,city,accidentes,rank,row_number
+AL,Birmingham,16935,1,1
+AL,Montgomery,10373,2,2
+AL,Huntsville,8094,3,3
+AL,Mobile,6895,4,4
+AL,Tuscaloosa,6779,5,5
+AR,Little Rock,4373,1,1
+AR,North Little Rock,1632,2,2
+AR,Benton,714,3,3
+AR,Fort Smith,561,4,4
+AR,West Memphis,557,5,5
+AZ,Phoenix,53701,1,1
+AZ,Tucson,39304,2,2
+AZ,Tempe,9531,3,3
+AZ,Scottsdale,6882,4,4
+AZ,Mesa,5999,5,5
+CA,Los Angeles,156491,1,1
+CA,Sacramento,66264,2,2
+CA,San Diego,55504,3,3
+CA,San Jose,34531,4,4
+CA,Riverside,26317,5,5
+CO,Denver,29658,1,1
+CO,Colorado Springs,7820,2,2
+CO,Aurora,5243,3,3
+CO,Englewood,3212,4,4
+CO,Golden,2351,5,5
+CT,Hartford,6254,1,1
+CT,East Hartford,3012,2,2
+CT,Waterbury,2860,3,3
+CT,New Haven,2763,4,4
+CT,Meriden,2676,5,5
+DC,Washington,18428,1,1
+DC,Sin ciudad,137,2,2
+DC,Suitland,22,3,3
+DC,Capitol Heights,20,4,4
+DC,Temple Hills,6,5,5
+DE,Wilmington,5089,1,1
+DE,New Castle,2643,2,2
+DE,Newark,1821,3,3
+DE,Middletown,788,4,4
+DE,Bear,622,5,5
+FL,Miami,186768,1,1
+FL,Orlando,109690,2,2
+FL,Jacksonville,41529,3,3
+FL,Tampa,31193,4,4
+FL,Fort Lauderdale,26205,5,5
+GA,Atlanta,68154,1,1
+GA,Augusta,12246,2,2
+GA,Decatur,7164,3,3
+GA,Marietta,4504,4,4
+GA,Norcross,2907,5,5
+IA,Des Moines,4301,1,1
+IA,Cedar Rapids,1272,2,2
+IA,Council Bluffs,1262,3,3
+IA,West Des Moines,1118,4,4
+IA,Urbandale,955,5,5
+ID,Meridian,2848,1,1
+ID,Boise,2602,2,2
+ID,Nampa,917,3,3
+ID,Caldwell,527,4,4
+ID,Eagle,329,5,5
+IL,Chicago,32035,1,1
+IL,Elgin,6377,2,2
+IL,Elmhurst,3635,3,3
+IL,Lombard,3316,4,4
+IL,Downers Grove,3239,5,5
+IN,Indianapolis,33219,1,1
+IN,Gary,2085,2,2
+IN,Hammond,1635,3,3
+IN,Richmond,904,4,4
+IN,Lake Station,891,5,5
+KS,Kansas City,6248,1,1
+KS,Overland Park,2756,2,2
+KS,Lenexa,2539,3,3
+KS,Shawnee,2348,4,4
+KS,Olathe,1855,5,5
+KY,Louisville,16221,1,1
+KY,Lexington,5051,2,2
+KY,Covington,2254,3,3
+KY,Ft Mitchell,1190,4,4
+KY,Erlanger,1026,5,5
+LA,Baton Rouge,71588,1,1
+LA,New Orleans,27354,2,2
+LA,Shreveport,15481,3,3
+LA,Lafayette,10528,4,4
+LA,Port Allen,1992,5,5
+MA,Boston,4866,1,1
+MA,Dorchester,2561,2,2
+MA,Andover,1735,3,3
+MA,Medford,1130,4,4
+MA,Waltham,1130,4,5
+MD,Baltimore,9077,1,1
+MD,Frederick,8031,2,2
+MD,Silver Spring,7926,3,3
+MD,Hyattsville,5723,4,4
+MD,Bethesda,5067,5,5
+ME,Portland,239,1,1
+ME,Scarborough,161,2,2
+ME,Falmouth,125,3,3
+ME,Saco,104,4,4
+ME,Augusta,99,5,5
+MI,Detroit,24452,1,1
+MI,Grand Rapids,24379,2,2
+MI,Flint,20651,3,3
+MI,Grand Blanc,4113,4,4
+MI,Southfield,3135,5,5
+MN,Minneapolis,51488,1,1
+MN,Saint Paul,37196,2,2
+MN,Burnsville,2761,3,3
+MN,Hopkins,2312,4,4
+MN,Forest Lake,2059,5,5
+MO,Kansas City,23859,1,1
+MO,Saint Louis,17045,2,2
+MO,Springfield,7689,3,3
+MO,Independence,2024,4,4
+MO,Saint Charles,1817,5,5
+MS,Jackson,3696,1,1
+MS,Hattiesburg,2157,2,2
+MS,Gulfport,507,3,3
+MS,Southaven,498,4,4
+MS,Moss Point,470,5,5
+MT,Bozeman,2548,1,1
+MT,Livingston,1389,2,2
+MT,Billings,1312,3,3
+MT,Missoula,1205,4,4
+MT,Kalispell,1099,5,5
+NC,Charlotte,138345,1,1
+NC,Raleigh,86066,2,2
+NC,Garner,7625,3,3
+NC,Greensboro,4582,4,4
+NC,Durham,4573,5,5
+ND,Fargo,382,1,1
+ND,Mandan,174,2,2
+ND,Mapleton,107,3,3
+ND,Bismarck,99,4,4
+ND,Grand Forks,93,5,5
+NE,Omaha,21556,1,1
+NE,Bellevue,1954,2,2
+NE,Papillion,863,3,3
+NE,Gretna,622,4,4
+NE,La Vista,565,5,5
+NH,Manchester,1222,1,1
+NH,Nashua,678,2,2
+NH,Londonderry,510,3,3
+NH,Concord,490,4,4
+NH,Hooksett,383,5,5
+NJ,Newark,9182,1,1
+NJ,Fort Lee,5178,2,2
+NJ,Jersey City,4214,3,3
+NJ,Trenton,3308,4,4
+NJ,Bellmawr,2602,5,5
+NM,Albuquerque,7074,1,1
+NM,Las Cruces,234,2,2
+NM,Gallup,220,3,3
+NM,Casa Blanca,171,4,4
+NM,Deming,152,5,5
+NV,Reno,7109,1,1
+NV,Sparks,2889,2,2
+NV,Las Vegas,1927,3,3
+NV,Carson City,1464,4,4
+NV,Fallon,654,5,5
+NY,Bronx,27297,1,1
+NY,Rochester,24743,2,2
+NY,New York,21699,3,3
+NY,Brooklyn,21357,4,4
+NY,Buffalo,9574,5,5
+OH,Dayton,23409,1,1
+OH,Columbus,19254,2,2
+OH,Cincinnati,14473,3,3
+OH,Cleveland,10692,4,4
+OH,Akron,4251,5,5
+OK,Oklahoma City,46092,1,1
+OK,Tulsa,28880,2,2
+OK,Edmond,2202,3,3
+OK,Yukon,2041,4,4
+OK,Broken Arrow,474,5,5
+OR,Portland,34754,1,1
+OR,Salem,4755,2,2
+OR,Pendleton,4503,3,3
+OR,Bend,4387,4,4
+OR,Eugene,4189,5,5
+PA,Philadelphia,20384,1,1
+PA,Pittsburgh,13926,2,2
+PA,Lancaster,12555,3,3
+PA,York,11438,4,4
+PA,Norristown,6753,5,5
+RI,Providence,7741,1,1
+RI,Warwick,1694,2,2
+RI,Pawtucket,1351,3,3
+RI,Cranston,1346,4,4
+RI,East Providence,856,5,5
+SC,Greenville,35694,1,1
+SC,Columbia,35018,2,2
+SC,Spartanburg,15752,3,3
+SC,Anderson,10884,4,4
+SC,Myrtle Beach,9706,5,5
+SD,Sioux Falls,138,1,1
+SD,Kimball,13,2,2
+SD,Huron,11,3,3
+SD,Reva,8,4,4
+SD,Wakpala,7,5,5
+TN,Nashville,72670,1,1
+TN,Chattanooga,16671,2,2
+TN,Memphis,16245,3,3
+TN,Antioch,8641,4,4
+TN,Knoxville,6003,5,5
+TX,Houston,169428,1,1
+TX,Dallas,130303,2,2
+TX,Austin,96604,3,3
+TX,San Antonio,37318,4,4
+TX,Fort Worth,19766,5,5
+UT,Salt Lake City,20463,1,1
+UT,Ogden,7274,2,2
+UT,West Valley City,4798,3,3
+UT,Draper,2842,4,4
+UT,Park City,2465,5,5
+VA,Richmond,41954,1,1
+VA,Norfolk,12264,2,2
+VA,Henrico,10285,3,3
+VA,Fairfax,8677,4,4
+VA,Alexandria,7962,5,5
+VT,Brattleboro,47,1,1
+VT,Putney,47,1,2
+VT,South Burlington,42,3,3
+VT,Montpelier,35,4,4
+VT,Bellows Falls,28,5,5
+WA,Seattle,36564,1,1
+WA,Tacoma,8210,2,2
+WA,Bellevue,4039,3,3
+WA,Renton,3875,4,4
+WA,Spokane,3556,5,5
+WI,Milwaukee,13037,1,1
+WI,Madison,2989,2,2
+WI,Waukesha,880,3,3
+WI,Green Bay,856,4,4
+WI,Brookfield,853,5,5
+WV,Charleston,2048,1,1
+WV,Huntington,740,2,2
+WV,Martinsburg,622,3,3
+WV,South Charleston,612,4,4
+WV,Morgantown,572,5,5
+WY,Rock Springs,397,1,1
+WY,Laramie,367,2,2
+WY,Wamsutter,363,3,3
+WY,Cheyenne,347,4,4
+WY,Hanna,268,5,5

@@ -1,0 +1,76 @@
+{
+  "variable_dependiente": "severity (1 a 4)",
+  "factor": "franja horaria",
+  "hipotesis_nula": "La severidad media es igual en madrugada, manana, tarde y noche.",
+  "hipotesis_alternativa": "Al menos una franja tiene una severidad media distinta.",
+  "alpha": 0.05,
+  "n": 7728394,
+  "k": 4,
+  "media_global": 2.2124,
+  "F": 1307.6786,
+  "p": 0.0,
+  "df_entre": 3,
+  "df_dentro": 7728390,
+  "eta_cuadrado": 0.000507,
+  "tamano_efecto": "insignificante",
+  "rechaza_h0": true,
+  "shapiro": [
+    {
+      "franja": "Madrugada",
+      "n_shapiro": 5000,
+      "W": 0.543,
+      "p": 3.220257194850718e-78
+    },
+    {
+      "franja": "Manana",
+      "n_shapiro": 5000,
+      "W": 0.5521,
+      "p": 8.661881974645417e-78
+    },
+    {
+      "franja": "Tarde",
+      "n_shapiro": 5000,
+      "W": 0.5303,
+      "p": 8.368732964962144e-79
+    },
+    {
+      "franja": "Noche",
+      "n_shapiro": 5000,
+      "W": 0.5473,
+      "p": 5.162804470803193e-78
+    }
+  ],
+  "levene_W": 10.1301,
+  "levene_p": 1.1449258832657403e-06,
+  "grupos": [
+    {
+      "franja": "Madrugada",
+      "n": 774573,
+      "media": 2.217925,
+      "varianza": 0.279751,
+      "orden": 0
+    },
+    {
+      "franja": "Manana",
+      "n": 2631665,
+      "media": 2.205406,
+      "varianza": 0.228978,
+      "orden": 1
+    },
+    {
+      "franja": "Tarde",
+      "n": 2884131,
+      "media": 2.206438,
+      "varianza": 0.222861,
+      "orden": 2
+    },
+    {
+      "franja": "Noche",
+      "n": 1438025,
+      "media": 2.234099,
+      "varianza": 0.260053,
+      "orden": 3
+    }
+  ],
+  "conclusion": "Se rechaza la hipotesis nula: la severidad media no es la misma en las cuatro franjas horarias. F(3, 7728390) = 1307.68, p = 0, eta cuadrado = 0.0005 (efecto insignificante). La severidad es una escala discreta de 1 a 4, asi que el supuesto de normalidad no se cumple y Shapiro-Wilk lo confirma en la muestra. Con millones de observaciones el ANOVA detecta diferencias muy pequenas; por eso la lectura practica se apoya en el tamano del efecto y en las medias, no solo en el p-valor."
+}
